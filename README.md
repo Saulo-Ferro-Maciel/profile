@@ -7,7 +7,6 @@ Bem-vindo ao meu portfólio online! Este site exibe meus projetos, habilidades e
 - [Sobre](#sobre)
 - [Tecnologias](#tecnologias)
 - [Estrutura do Projeto](#estrutura-do-projeto)
-- [Contato](#contato)
 - [Licença](#licença)
 
 ## Sobre
