@@ -1,0 +1,28 @@
+#content-softSkill {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 50%; /* Maintained width */
+    height: auto; /* Removed fixed height */
+}
+
+table, #table {
+    width: inherit; /* Inherit width from parent (#content-softSkill) */
+    border-radius: 10px;
+    border: 1.5px solid black;
+}
+
+th, td, #table {
+    border-radius: 5px; /* Reduced corner radius for smaller tables */
+    border: 1px solid black;
+    padding: 5px; /* Reduced padding for smaller content area */
+    text-align: left;
+}
+
+
+
+.logo2 {
+    width: 24px;
+    height: 24px;
+}
+  

@@ -1,0 +1,176 @@
+.centralizador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10%; margin-right: 10%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 150%; height: 195px; 
+    margin-left: 10%; margin-right: 10%;
+    overflow: hidden;
+}
+
+.saudacao {
+    font-family: 'Ubuntu Mono', cursive;
+    font-size: 25px;
+    max-width: 100%;
+    overflow: hidden;
+    top: 30%;
+    box-sizing: border-box;
+    position: absolute;
+    text-align: center;
+}
+
+.headline {
+    font-size: 25px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center; 
+}
+
+.headline:after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: flash .7s infinite;
+}
+
+.footerTitle {
+    font-family: 'Raleway', cursive;
+}
+
+.toolbar {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 50px; 
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+}
+
+.logo {
+    width: 5%;
+    margin-left: 10%;
+    opacity: .8;
+}
+
+.slider-container {
+    margin-left: auto;
+    margin-top: 3px;
+    margin-right: 10%;
+}
+
+.sobre-mim {
+    margin-top: -3.5%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    font-family: 'Karla';
+    flex-direction:row;
+    padding: 3px;
+    margin-right: 10%; margin-right: 10%;
+}
+
+.sobre-mim .content p {
+    position: relative;
+    width: 80%;
+    font-size: 18px;
+    align-items: center;
+
+    text-align:left;
+}
+
+.content {
+    padding: 20px;
+    transition: max-height 0.5s ease;
+    max-height: 370px; width: 380px ;
+    justify-content: right;
+    z-index: 1;
+    margin-bottom: 2%;
+    
+}
+
+.more-content {
+    display: none;
+    margin-bottom: 5px;
+    margin-top: 2.5px;
+}
+
+.show .more-content {
+    display: block;
+}
+
+.show {
+    max-height: 500px; /* Ajuste conforme necessário */
+}
+
+.vejaMais {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1.8px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+    margin-bottom: 2%;
+}
+
+.vejaMais:hover {
+    opacity: 0.6;
+}
+
+.sobre-mim img {
+    position: relative;
+    width: 290px; 
+    margin-left: -10%;
+    z-index: 3;
+}
+
+.botoes2 {
+    display: flex;
+    gap: 3px;
+    justify-content: left;
+}
+
+.soft {
+    margin-top: 3%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 65vh;
+    background-color: rgba(255, 255, 255, 0.952);
+    color: black;
+    position: -webkit-sticky; /* Para suporte a navegadores mais antigos */
+    position: sticky;
+    top: 0; /* Posição onde o elemento se fixa */
+    z-index: 1000; /* Alta prioridade de empilhamento */
+}
+
+@keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+

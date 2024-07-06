@@ -1,0 +1,66 @@
+@media (max-width: 768px) {
+    footer::before {
+        width: 0;
+    }
+
+    .body-page {
+        margin-top: -10
+    }
+
+    .logo {
+        width: 15%;
+        opacity: .7;
+        margin-left: 2px;
+    }
+
+    .slider-container {
+        margin-right: 5px;
+        opacity: .9;
+    }
+
+    .sobre-mim {
+        margin-top: -14.5%;
+        margin-left: 9%;
+        width: 120%;
+        height: 180%;
+        padding: 4px;
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        margin-left: 1%;
+        width: 90%; height: 110%;
+    }
+
+    .sobre-mim .content p {
+        width: 90%;
+        margin-top: -7%;
+        text-align:justify;
+        margin-top: 1px;
+    }
+
+    .sobre-mim img {
+        width: 48%;
+        margin-left: 10%;
+        margin-bottom: -6%;
+    }
+
+    .seta, .rmInMobile {
+        display: none;
+    }
+
+    .body {
+        height: 50vb;
+    }
+
+    #content-softSkill {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .slider-container {
+        margin-top: 5px;
+    }
+}
+   

@@ -1,0 +1,42 @@
+.slider-container {
+  position: relative;
+  width: 70px;
+  height: 28px;
+}
+
+.slider {
+  display: none;
+}
+
+.slider-label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fffcfc8e;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.slider-label .sun,
+.slider-label .moon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 30px;
+  font-size: 19px;
+}
+
+.slider-label .sun {
+  opacity: .5;
+}
+
+.slider-label .moon {
+  opacity: .5;
+}

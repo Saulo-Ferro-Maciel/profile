@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" sizes="32x32" type="image/x-icon" href="./img/logoProject.png">
+
+    <!-- Google Font Config -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Raleway:wght@300;500&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Config-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Animate Css Config -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Css Config-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/darkMode.css">
+    <link rel="stylesheet" href="./css/tabelas.css">
+    <link rel="stylesheet" href="./css/fonts-icones.css">
+    <link rel="stylesheet" href="./css/seta.css">
+
+    <!-- JS Config-->
+    <script defer src="./js/animacoesVisiveis.js"></script>
+    <script defer src="./js/vejaMais.js"></script> 
+    <script defer src="./js/darkMode.js"></script>
+    <script defer src="./js/maquinaDeEscrever.js"></script>
+    <script defer src="./js/saudacao.js"></script>
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+
+    <!-- Header Page -->
+    <div class="centralizador">
+        <div class="toolbar">
+            <img class="logo" id="logo-project" src="./img/logo.png" alt="Logo do portfolio, são as iniciais de Saulo Ferro" title="Logo do portfolio">
+
+            <div class="slider-container" title="Ative o Dark Mode ou o Ligth Mode">
+                <input type="checkbox" id="toggle" class="slider">
+                <label for="toggle" class="slider-label">
+                <span class="sun" onclick="setDayMode()" title="Ligth Mode"><i class="fas fa-sun"></i></span>
+                <span class="moon" onclick="setNightMode()" title="Dark Mode"><i class="fas fa-moon"></i></span>
+                </label>
+            </div>
+        </div>
+        <div class="header">
+            <p class="saudacao"></p>
+            <h1 class="apresentacao headline"></h1>
+        </div>
+        
+    </div>
+
+    <!-- Body Page -->
+    <div class="centralizador body-page" style="margin-top: -2%;">
+        <div class="sobre-mim">
+            <div class="content" id="content-box">
+                <p> &nbsp;&nbsp; <b>Sou</b> um <b>desenvolvedor front-end</b> nascido no Maranhão, <b>no nordeste do Brasil.</b><br><br>&nbsp;&nbsp; <b>Possuo formação</b> acadêmica <b>em Bacharel em Jornalismo</b> e <b>Técnico em Programação de Jogos Digitais</b>,<b> adoro aplicar os princípios de gamificação em</b> meus <b>projetos</b> como <b>mecanismo facilitador da curva de aprendizagem dos usuários</b>.<br><br></p>
+                <div class="more-content">
+                    <p> &nbsp;&nbsp;<b>Adoro</b> pesquisar <b>tecnologias e estratégias de produção</b> para sempre ter habilidades renovadas. Nas hora vagas estudo, especialmente, frameworks Python, escrevo artigos de temáticas distitas ou testo distribuições Linux. <br><br> &nbsp;&nbsp; Conecte-se comigo
+                    </p>
+                    <div class="botoes2">
+                
+                        <a href="https://www.linkedin.com/in/saulo-ferro-maciel-74b65a1b8/" class="social-button" title="Encontre-me no linkedin" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+        
+                        <a href="mailto:sauloferromaciel@gmail.com" class="social-button" title="Enviar-me um e-mail">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                          
+                        <a href="https://wa.me/559891307898" class="social-button" title="Chama-me no whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+        
+                        <a href="https://github.com/Saulo-Ferro-Maciel" class="social-button" title="Encontre-me no github" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <button class="vejaMais" onclick="toggleContent('content-box', this)">Veja Mais</button>
+            </div>
+            
+            <img class="photo" src="./img/photo.png" alt="">
+        </div> 
+
+        <div class="aviso">
+            <p class="seta set">&#129047;</p>
+            <p class="seta set">&#128432;</p>
+        </div>
+
+        <div class="body" style="z-index: 3;">
+            <h1 class="soft">Soft Skill</h4>
+            <div id="content-softSkill">
+                
+                <!-- Primeira tabela: Linguagens de Programação -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Linguagens de Programação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fab fa-python"></i></td>
+                            <td>Python</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-js"></i></td>
+                            <td>JavaScript</td>
+                        </tr>
+                        <tr >
+                            <td><i class="fab fa-css3-alt"></i></td>
+                            <td>CSS</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-html5"></i></td>
+                            <td>HTML</td>
+                        </tr>
+                        <tr >
+                            <td><i class="fas fa-terminal"></i></td>
+                            <td>Shell Script</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <svg class="ts1"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><rect x="6" y="6" width="36" height="36" fill="#000306"></rect><path d="M27.49,22h-13.263v3.264h4.757v14.736h3.769v-14.736h4.737z" fill="#ffffff"></path><path d="M39.194,26.084c0,0 -1.787,-1.192 -3.807,-1.192c-2.02,0 -2.747,0.96 -2.747,1.986c0,2.648 7.381,2.383 7.381,7.712c0,8.209 -11.254,4.568 -11.254,4.568v-3.938c0,0 2.152,1.622 4.733,1.622c2.581,0 2.483,-1.688 2.483,-1.92c0,-2.449 -7.315,-2.449 -7.315,-7.878c0,-7.381 10.658,-4.469 10.658,-4.469z" fill="#ffffff"></path></g></g>
+                                </svg>
+
+                                <svg class="ts2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><rect x="6" y="6" width="36" height="36" fill="#ffffff"></rect><path d="M27.49,22h-13.263v3.264h4.757v14.736h3.769v-14.736h4.737z" fill-opacity="0.67843" fill="#000000"></path><path d="M39.194,26.084c0,0 -1.787,-1.192 -3.807,-1.192c-2.02,0 -2.747,0.96 -2.747,1.986c0,2.648 7.381,2.383 7.381,7.712c0,8.209 -11.254,4.568 -11.254,4.568v-3.938c0,0 2.152,1.622 4.733,1.622c2.581,0 2.483,-1.688 2.483,-1.92c0,-2.449 -7.315,-2.449 -7.315,-7.878c0,-7.381 10.658,-4.469 10.658,-4.469z" fill-opacity="0.67843" fill="#000000"></path></g></g>
+                                </svg>
+                            </td>
+                            <td>TypeScript</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <svg class="c-sharp1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                                    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M22.903,3.286c0.679,-0.381 1.515,-0.381 2.193,0c3.355,1.883 13.451,7.551 16.807,9.434c0.679,0.38 1.097,1.084 1.097,1.846c0,3.766 0,15.101 0,18.867c0,0.762 -0.418,1.466 -1.097,1.847c-3.355,1.883 -13.451,7.551 -16.807,9.434c-0.679,0.381 -1.515,0.381 -2.193,0c-3.355,-1.883 -13.451,-7.551 -16.807,-9.434c-0.678,-0.381 -1.096,-1.084 -1.096,-1.846c0,-3.766 0,-15.101 0,-18.867c0,-0.762 0.418,-1.466 1.097,-1.847c3.354,-1.883 13.452,-7.551 16.806,-9.434z" fill="#000203"></path><path d="M5.304,34.404c-0.266,-0.356 -0.304,-0.694 -0.304,-1.149c0,-3.744 0,-15.014 0,-18.759c0,-0.758 0.417,-1.458 1.094,-1.836c3.343,-1.872 13.405,-7.507 16.748,-9.38c0.677,-0.379 1.594,-0.371 2.271,0.008c3.343,1.872 13.371,7.459 16.714,9.331c0.27,0.152 0.476,0.335 0.66,0.576z" fill="#000000"></path><path d="M24,10c7.727,0 14,6.273 14,14c0,7.727 -6.273,14 -14,14c-7.727,0 -14,-6.273 -14,-14c0,-7.727 6.273,-14 14,-14zM24,17c3.863,0 7,3.136 7,7c0,3.863 -3.137,7 -7,7c-3.863,0 -7,-3.137 -7,-7c0,-3.864 3.136,-7 7,-7z" fill="#ffffff"></path><path d="M42.485,13.205c0.516,0.483 0.506,1.211 0.506,1.784c0,3.795 -0.032,14.589 0.009,18.384c0.004,0.396 -0.127,0.813 -0.323,1.127l-19.084,-10.5z" fill="#000000"></path><path d="M34,20h1v8h-1zM37,20h1v8h-1z" fill="#ffffff"></path><path d="M32,25h8v1h-8zM32,22h8v1h-8z" fill="#ffffff"></path></g></g>
+                                </svg>
+
+                                <svg class="c-sharp2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                                    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M22.903,3.286c0.679,-0.381 1.515,-0.381 2.193,0c3.355,1.883 13.451,7.551 16.807,9.434c0.679,0.38 1.097,1.084 1.097,1.846c0,3.766 0,15.101 0,18.867c0,0.762 -0.418,1.466 -1.097,1.847c-3.355,1.883 -13.451,7.551 -16.807,9.434c-0.679,0.381 -1.515,0.381 -2.193,0c-3.355,-1.883 -13.451,-7.551 -16.807,-9.434c-0.678,-0.381 -1.096,-1.084 -1.096,-1.846c0,-3.766 0,-15.101 0,-18.867c0,-0.762 0.418,-1.466 1.097,-1.847c3.354,-1.883 13.452,-7.551 16.806,-9.434z" fill="#ffffff"></path><path d="M5.304,34.404c-0.266,-0.356 -0.304,-0.694 -0.304,-1.149c0,-3.744 0,-15.014 0,-18.759c0,-0.758 0.417,-1.458 1.094,-1.836c3.343,-1.872 13.405,-7.507 16.748,-9.38c0.677,-0.379 1.594,-0.371 2.271,0.008c3.343,1.872 13.371,7.459 16.714,9.331c0.27,0.152 0.476,0.335 0.66,0.576z" fill="#ffffff"></path><path d="M24,10c7.727,0 14,6.273 14,14c0,7.727 -6.273,14 -14,14c-7.727,0 -14,-6.273 -14,-14c0,-7.727 6.273,-14 14,-14zM24,17c3.863,0 7,3.136 7,7c0,3.863 -3.137,7 -7,7c-3.863,0 -7,-3.137 -7,-7c0,-3.864 3.136,-7 7,-7z" fill-opacity="0.7098" fill="#000506"></path><path d="M42.485,13.205c0.516,0.483 0.506,1.211 0.506,1.784c0,3.795 -0.032,14.589 0.009,18.384c0.004,0.396 -0.127,0.813 -0.323,1.127l-19.084,-10.5z" fill="#ffffff"></path><path d="M34,20h1v8h-1zM37,20h1v8h-1z" fill-opacity="0.7098" fill="#000506"></path><path d="M32,25h8v1h-8zM32,22h8v1h-8z" fill-opacity="0.7098" fill="#000506"></path></g></g>
+                                </svg>
+                            </td>
+                            <td>C-Sharp</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p> &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; </p>
+
+                <!-- Segunda tabela: Frameworks -->
+                <table class="table2">
+                    <thead>
+                        <tr class="tr">
+                            <th colspan="2">Frameworks e Game Engines</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr">
+                            <td><i class="fab fa-python"></i></td>
+                            <td>Tkinter</td>
+                        </tr>
+                        <tr class="tr">
+                            <td><i class="fab fa-python"></i></td>
+                            <td>Django</td>
+                        </tr>
+                        <tr class="tr">
+                            <td><i class="fab fa-angular"></i></td>
+                            <td>Angular</td>
+                        </tr >
+                        <tr class="tr">
+                            <td><i class="fab fa-python"></i></td>
+                            <td>Kivy</td>
+                        </tr>
+                        <tr class="tr">
+                            <td><i class="fa-brands fa-unity"></i></td>
+                            <td>Unity</td>
+                        </tr>
+                        <tr class="tr">
+                            <td><i class="fa-solid fa-gamepad"></i></td>
+                            <td>Godot</td>
+                        </tr>
+                        <tr class="tr">
+                            <td><i class="fa-solid fa-gamepad"></i></td>
+                            <td>Pygame</td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </div>  
+        </div>
+    </div>
+
+    <!-- Footer Body -->
+    <div class="centralizador">
+        <footer>
+            <div class="footer-content">
+                <p class="footerTitle"> <b>© 2024 Saulo Ferro Maciel</b></p>
+            </div>
+            <div class="botoes">
+                
+                <a href="https://www.linkedin.com/in/saulo-ferro-maciel-74b65a1b8/" class="social-button" title="Encontre-me no linkedin" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:sauloferromaciel@gmail.com" class="social-button" title="Enviar-me um e-mail">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+                  
+                <a href="https://wa.me/559891307898" class="social-button" title="Chama-me no whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="https://github.com/Saulo-Ferro-Maciel" class="social-button" title="Encontre-me no github" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+</html>
+

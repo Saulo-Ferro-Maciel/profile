@@ -1,0 +1,28 @@
+.seta {
+    text-align:center;
+    font-size:25px;
+    color:whitesmoke;
+    width:15px;
+    height:50px;
+    background:transparent;
+    margin:auto;
+    float:none;
+    opacity:0;
+    animation:anima-seta 700ms ease infinite;
+}
+
+.aviso {
+    opacity: 0.8;
+    margin-bottom: 7%; margin-top: -5%;
+    display: flex;
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 10px; /* Espaço entre os itens */
+}
+
+@keyframes anima-seta {
+    to {
+        opacity:0.7;
+        transform: translateY(18px);
+    }
+}
