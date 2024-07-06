@@ -37,6 +37,7 @@ Este site foi desenvolvido com as seguintes tecnologias:
 ├── img/
 │   └── [imagens do projeto]
 └── README.md
+```
 
 ## Licença
 
