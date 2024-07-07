@@ -1,4 +1,4 @@
-function animationScroll(elemento, animacao, tamanho, delay) {
+function animationScroll(elemento, animacao, tamanho, delay, lockTime) {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -8,16 +8,16 @@ function animationScroll(elemento, animacao, tamanho, delay) {
                 function handleAnimationEnd() {
                     target.classList.remove('animate__animated', animacao);
                     target.removeEventListener('animationend', handleAnimationEnd);
+
+                    // Inicia o bloqueio após a animação terminar
+                    lockAnimation(target);
                 }
 
-                // Verifica se a animação já foi aplicada
-                if (!target.classList.contains('animate__animated')) {
-                    // Inicia o temporizador
+                // Verifica se a animação já foi aplicada ou está em bloqueio
+                if (!target.classList.contains('animate__animated') && !isLocked(target)) {
+                    // Adiciona a classe de animação após o delay
                     setTimeout(() => {
-                        // Adiciona a classe de animação após o delay
                         target.classList.add('animate__animated', animacao);
-
-                        // Adiciona o listener de evento 'animationend'
                         target.addEventListener('animationend', handleAnimationEnd);
                     }, delay);
                 }
@@ -30,4 +30,20 @@ function animationScroll(elemento, animacao, tamanho, delay) {
 
     // Use querySelectorAll para observar múltiplos elementos
     document.querySelectorAll(`.${elemento}`).forEach(el => observer.observe(el));
+
+    // Mapa para armazenar o estado de bloqueio dos elementos
+    const lockedElements = new Map();
+
+    // Função para bloquear a animação de um elemento
+    function lockAnimation(element) {
+        lockedElements.set(element, true);
+        setTimeout(() => {
+            lockedElements.delete(element);
+        }, lockTime);
+    }
+
+    // Função para verificar se um elemento está bloqueado
+    function isLocked(element) {
+        return lockedElements.has(element);
+    }
 }
