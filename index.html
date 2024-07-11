@@ -160,6 +160,7 @@
             Já pode pagar imposto<br>
             <!--<a style="font-size: 10px" href="http://">Acesse seu presente</a>-->
         </div>
+        <button id="play-button" style="margin-top: 20px; padding: 10px 20px; font-size: 16px;">Tocar Música de Parabéns</button>
     </div>
     <div class="background-slider">
         <img src="./Screenshot 2024-07-11 at 15-53-28 Angelo Ferro Maciel (@anjo_feh_ciel) • Fotos e vídeos do Instagram.png" class="active" />
@@ -260,6 +261,7 @@
         function playBirthdaySong() {
             const audioElement = document.getElementById('birthday-song');
             audioElement.play();
+            document.getElementById('play-button').style.display = 'none';
         }
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -275,10 +277,10 @@
 
             changeBackground(); // Chame a função changeBackground aqui
 
-            if (confirm('Você quer tocar a música de parabéns para Angelo?')) {
-                playBirthdaySong();
-            }
+            const playButton = document.getElementById('play-button');
+            playButton.addEventListener('click', playBirthdaySong);
         });
     </script>
 </body>
 </html>
+
