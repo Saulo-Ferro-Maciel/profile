@@ -12,6 +12,24 @@ async function init() {
     animationScroll('photo', 'animate__backInDown', [0.5], 10);
 }
 
+async function init() {
+    await atualizarSaudacao();
+    const phrase = document.querySelector('.saudacao');
+    typeWrite(phrase);
+
+    const outroElemento = document.querySelector('.headline');
+    typeWrite(outroElemento);
+
+    // Animações da Página
+    animationScroll('slider-container', 'animate__backInRight', [0, 0.5], 30);
+    animationScroll('logo', 'animate__backInLeft', [0], 30);
+
+    // Verifica se o dispositivo é um mobile (largura da tela menor que 768px)
+    if (window.innerWidth <= 768) {
+        animationScroll('photo', 'animate__backInDown', [0.5], 10);
+    }
+}
+
 
 
 init();
