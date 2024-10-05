@@ -1,19 +1,23 @@
-.seta {
-    text-align:center;
-    font-size:25px;
-    color:whitesmoke;
-    width:15px;
-    height:50px;
+.seta, .set {
     background:transparent;
     margin:auto;
     float:none;
     opacity:0;
     animation:anima-seta 700ms ease infinite;
+    width:20px;
+    height:30px;
+    margin-top: 50%;
+}
+
+.fa-computer-mouse, .fa-arrow-down {
+    font-size: 20px;
+    text-align:center;
+    color:whitesmoke;
 }
 
 .aviso {
     opacity: 0.9;
-    margin-bottom: 7%; margin-top: -5%;
+    margin-bottom: 6%; margin-top: -5%;
     display: flex;
     justify-content: space-between; /* Espaça os itens igualmente */
     align-items: center; /* Alinha os itens verticalmente ao centro */
