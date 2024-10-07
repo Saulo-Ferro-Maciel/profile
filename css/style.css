@@ -162,7 +162,8 @@
     position: -webkit-sticky; /* Para suporte a navegadores mais antigos */
     position: sticky;
     top: 0; /* Posição onde o elemento se fixa */
-    z-index: 1000; /* Alta prioridade de empilhamento */
+    z-index: 800; /* Alta prioridade de empilhamento */
+    margin-bottom: 6%;
 }
 
 @keyframes flash {

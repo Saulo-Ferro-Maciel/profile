@@ -27,37 +27,21 @@ function moveSlide(direction) {
 // Função para atualizar o estado dos botões
 function updateButtons() {
     // Desativar o botão "prev" se estivermos no primeiro slide
-    if (currentSlide === 0) {
-        prevButton.disabled = true;
-        prevButton.title = "Você está no primeiro slide"; // Adiciona título ao botão desativado
-    } else {
-        prevButton.disabled = false;
-        prevButton.title = ""; // Remove o título quando o botão é reativado
-    }
-
-    // Desativar o botão "next" se estivermos no último slide
-    if (currentSlide === totalSlides - 1) {
-        nextButton.disabled = true;
-        nextButton.title = "Você está no último slide"; // Adiciona título ao botão desativado
-    } else {
-        nextButton.disabled = false;
-        nextButton.title = ""; // Remove o título quando o botão é reativado
-    }
+    prevButton.disabled = currentSlide === 0;
+    nextButton.disabled = currentSlide === totalSlides - 1;
 }
 
-// Função para mudar o slide automaticamente a cada 2 segundos
+// Função para mudar o slide automaticamente a cada 3.5 segundos
 function autoSlide() {
     setInterval(function() {
         if (currentSlide < totalSlides - 1) {
-            moveSlide(1); // Avança para o próximo slide
+            moveSlide(1);
         } else {
-            currentSlide = -1; // Reinicia o ciclo ao chegar no último slide
+            currentSlide = -1; // Reiniciar ao chegar ao último slide
         }
-    }, 3500); // Intervalo de 2 segundos
+    }, 3500);
 }
 
-// Inicializar o estado dos botões
+// Inicializar o estado dos botões e transição automática dos slides
 updateButtons();
-
-// Iniciar a transição automática dos slides
 autoSlide();
