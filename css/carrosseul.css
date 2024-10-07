@@ -14,6 +14,26 @@
     background-position: center; /* Centraliza a imagem no fundo */
 }
 
+.carrosseul::before {
+    content: '';
+    position: absolute;.carrosseul::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Cor preta semi-transparente para a opacidade */
+        z-index: -1; /* Colocar atrás do conteúdo */
+    }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.644); /* Cor preta semi-transparente para a opacidade */
+    z-index: -1; /* Colocar atrás do conteúdo */
+}
+
 /* Container do carrossel */
 .carrossel {
     position: relative; /* Não usar fixo, o carrossel deve se mover com o fluxo da página */
