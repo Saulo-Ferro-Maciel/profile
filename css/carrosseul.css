@@ -1,11 +1,17 @@
-.carroseul{
+.carroseul {
     z-index: 900;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    position: relative;
-    display:flex;
-    
+    position: sticky; /* Fixa na posição ao rolar */
+    top: 0; /* Começa a ser fixo a partir do topo da página */
+    display: flex;
+    width: 100vw; /* Preenche toda a largura da tela */
+    height: 63vh; /* Preenche toda a altura da tela */
+    background-image:url('/img/camp.jpg');
+    background-position: 100% 100%;
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
 }
 
 /* Container do carrossel */
@@ -20,6 +26,9 @@
     height: auto; /* Remover altura fixa */
 }
 
+.tituloProjetos {
+    margin-top: -5%;
+}
 /* Container de slides */
 .slides-container {
     display: flex;

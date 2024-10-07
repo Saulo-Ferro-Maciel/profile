@@ -25,8 +25,8 @@ animationScroll('logo', 'animate__backInLeft', [0], 100, 500);
 animationScroll('slider-container', 'animate__backInRight', [0, 0.5], 100, 500);
 animationScroll('content', 'animate__backInUp', [0], 10, 2000);
 animationScroll('photo', 'animate__backInDown', [1], 10, 2000);
-animationScroll('table', 'animate__bounceInLeft', [1], 1060, 500);
-animationScroll('table2', 'animate__flash', [1], 1060, 500);
+animationScroll('table', 'animate__bounceInLeft', [0,0.5], 1000, 500);
+animationScroll('table2', 'animate__flash', [0,0.5], 1060, 500);
 animationScroll('set','animate__bounceInUp',[0, 0.5], 30, 500);
 
 setInterval(() => {init(); }, 18000);
